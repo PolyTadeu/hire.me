@@ -1,0 +1,13 @@
+certifi
+fastapi
+pydantic
+pytest
+python-dotenv
+requests
+requests_toolbelt
+typing
+uvicorn
+httpx
+pytz
+numpy
+fastapi_utils

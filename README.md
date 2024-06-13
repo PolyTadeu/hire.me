@@ -1,11 +1,4 @@
 # Hire.me
-Um pequeno projeto para testar suas habilidades como programador.
-
-## Instruções Gerais
-
-1. *Clone* este repositório
-2. Em seu *fork*, atenda os casos de usos especificados e se desejar também os bonus points
-3. Envio um e-mail para rh@bemobi.com.br com a seu Nome e endereço do repositorio.
 
 ## Projeto
 
@@ -28,7 +21,7 @@ O projeto consiste de dois casos de uso:
     1. Quanto tempo a operação levou
     2. URL Original
 
-Exemplos (Você não precisa seguir este formato):
+Exemplos:
 
 * Chamada sem CUSTOM_ALIAS
 ```
@@ -37,6 +30,7 @@ PUT http://shortener/create?url=http://www.bemobi.com.br
 {
    "alias": "XYhakR",
    "url": "http://shortener/u/XYhakR",
+   "original_url": "http://www.bemobi.com.br",
    "statistics": {
        "time_taken": "10ms",
    }
@@ -50,6 +44,7 @@ PUT http://shortener/create?url=http://www.bemobi.com.br&CUSTOM_ALIAS=bemobi
 {
    "alias": "bemobi",
    "url": "http://shortener/u/bemobi",
+   "original_url": "http://www.bemobi.com.br",
    "statistics": {
        "time_taken": "12ms",
    }
@@ -76,14 +71,13 @@ PUT http://shortener/create?url=http://www.github.com&CUSTOM_ALIAS=bemobi
 3. Esta tupla ou registro é mapeado para uma entidade de seu projeto
 3. É retornado para o cliente um resultado que contenha a URL final, a qual ele deve ser redirecionado automaticamente
 
-## Stack Tecnológico
+## 🔧 Setup Locally
 
-Não há requerimentos específicos para linguagens, somos poliglotas. Utilize a linguagem que você se sente mais confortável.
+To use the app in a local environment:
 
-## Bonus Points
-
-1. Crie *testcases* para todas as funcionalidades criadas
-2. Crie um *endpoint* que mostre as dez *URL's* mais acessadas 
-3. Crie um *client* para chamar sua API
-4. Faça um diagrama de sequencia da implementação feita nos casos de uso (Dica, use o https://www.websequencediagrams.com/)
-5. Monte um deploy da sua solução utilizando containers 
+1. First, clone this repo in your machine.
+2. Then, put these commands in your terminal inside project folder:
+   ```
+   $ pip3 install -r requirements.txt
+   $ python3 app.py
+   ```

@@ -1,5 +1,16 @@
 # Hire.me
 
+## 🔧 Configuração local
+
+Para utilizar o aplicativo em um ambiente local:
+
+1. Primeiro, clone este repositório em sua máquina.
+2. Em seguida, execute esses comandos no seu terminal dentro da pasta do projeto:
+   ```
+   $ pip3 install -r requirements.txt
+   $ python3 app.py
+   ```
+
 ## Projeto
 
 O projeto consiste em reproduzir um encurtador de URL's (apenas sua API), simples e com poucas funções, porém com espaço suficiente para mostrar toda a gama de desenho de soluções, escolha de componentes, mapeamento ORM, uso de bibliotecas de terceiros, uso de GIT e criatividade.
@@ -70,14 +81,3 @@ PUT http://shortener/create?url=http://www.github.com&CUSTOM_ALIAS=bemobi
 2. O Registro é lido de um repositório (*Data Store*)
 3. Esta tupla ou registro é mapeado para uma entidade de seu projeto
 3. É retornado para o cliente um resultado que contenha a URL final, a qual ele deve ser redirecionado automaticamente
-
-## 🔧 Setup Locally
-
-To use the app in a local environment:
-
-1. First, clone this repo in your machine.
-2. Then, put these commands in your terminal inside project folder:
-   ```
-   $ pip3 install -r requirements.txt
-   $ python3 app.py
-   ```
